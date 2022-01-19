@@ -1,0 +1,39 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:35171",
+      "sslPort": 44352
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "_testapp_dotnet_web_aws": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        //"DB_SERVER": "",
+        "DB_SERVER_PORT": "5432",
+        "DB_NAME": "postgres",
+        "DB_USER": "dotnetwebdev",
+        "DB_PASSWORD": "dotnetwebdev",
+        "AWS_REGION": "us-east-1",
+        //"AWS_CLIENT_ID": "",
+        //"AWS_SECRET": "",
+        "AWS_SQS_QUEUE_NAME": "stamper-queue",
+        //"AWS_SQS_URL": "",
+        "AWS_SQS_LONG_POLL_TIME": "0"
+      }
+    }
+  }
+}
